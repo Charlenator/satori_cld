@@ -16,7 +16,7 @@ class ChatBot:
    ):
        try:
            response = self.anthropic.messages.create(
-               model="claude-3-haiku-20240307",
+               model="claude-3-5-sonnet-20240620",
                system=IDENTITY,
                max_tokens=max_tokens,
                messages=messages
