@@ -10,6 +10,15 @@ def load_css():
 
 def main():
     load_css()
+    
+    hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
+
     st.markdown(
         """
 <script src="https://cdn.tailwindcss.com"></script>
@@ -32,12 +41,17 @@ def main():
         ]
 
     chatbot = ChatBot(st.session_state)
-
+    bot_avatar = "https://raw.githubusercontent.com/Charlenator/satori_cld/master/static/bot.png"
+    user_avatar = "https://raw.githubusercontent.com/Charlenator/satori_cld/master/static/user.png"
     # Display user and assistant messages skipping the first two
     for message in st.session_state.messages[2:]:
         # ignore tool use blocks
         if isinstance(message["content"], str):
-            with st.chat_message(message["role"]):
+            if message["role"] == "user":
+                avatar_link = user_avatar
+            else:
+                avatar_link = bot_avatar
+            with st.chat_message(message["role"], avatar=avatar_link):
                 if message["role"] == "user":
                     st.markdown(
                         f'''
