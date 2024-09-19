@@ -35,7 +35,7 @@ def main():
     )
 
     st.markdown(
-        '<h1 class="text-3xl font-bold mb-4">Ask me almost anything about Shipping!</h1>',
+        '<h2 class="text-2xl font-bold mb-2">Ask me almost anything about Shipping!</h1>',
         unsafe_allow_html=True,
     )
     st.logo(
