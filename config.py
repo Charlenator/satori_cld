@@ -11,7 +11,8 @@ STATIC_GREETINGS_AND_GENERAL = """
 Ship My Stuff: Internatiomal Courier Service, simplified. We ship almost anything.
 
 About:
-Ship My Stuff offers specialised packaging solutions for both non-hazardous and hazardous cargo. Personal or commercial, we have the solution for you 
+Ship My Stuff offers specialised packaging solutions for both non-hazardous and hazardous cargo. Personal or commercial, we have the solution for you.
+Ship My Stuff also handles residential moves, local and international. 
 We offer custom packaging solutions and ship it to your destination.
 Paintings
 Trophies

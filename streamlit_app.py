@@ -9,6 +9,15 @@ def load_css():
         st.markdown(css, unsafe_allow_html=True)
 
 def main():
+    st.set_page_config(
+    page_title="Ship My Stuff Customer Service (Demo)",
+    page_icon=":robot_face:",
+    layout="wide",
+    menu_items={
+        'Report a bug': "charlecoetzee@gmail.com",
+        'About': "Customer Service Chatbot (demo, in development, ShipMyStuff is not liable for anything the bot says :). Ask me anything about shipping!"
+    }
+    )
     load_css()
     
     hide_streamlit_style = """
