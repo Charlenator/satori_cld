@@ -3,7 +3,25 @@ from chatbot import ChatBot
 from config import TASK_SPECIFIC_INSTRUCTIONS
 
 def main():
-   st.title("Ask me almost anything about Shipping!")
+   st.markdown(
+    """
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+.chat-font {
+    font-family: 'Inter', sans-serif; 
+}
+</style>
+    """,
+    unsafe_allow_html=True,
+)
+
+   st.markdown(
+        '<h1 class="text-3xl font-bold mb-4">Ask me almost anything about Shipping!</h1>',
+        unsafe_allow_html=True,
+   )
+   st.logo(
+        image="https://shipmystuff-app.com/static/media/Logo_Optimised.02883188.png"
+   )
 
    if "messages" not in st.session_state:
        st.session_state.messages = [
@@ -18,7 +36,20 @@ def main():
        # ignore tool use blocks
        if isinstance(message["content"], str):
            with st.chat_message(message["role"]):
-               st.markdown(message["content"])
+               if message["role"] == "user":
+                   st.markdown(
+                    f'<div class="bg-blue-100 p-3 rounded-lg shadow-md max-w-xs ml-auto"> {message["content"]} </div>',
+                    unsafe_allow_html=True,
+                )
+               else:
+                # Assistant message styling
+                   st.markdown(
+                    f'<div class="bg-gray-100 p-3 rounded-lg shadow-md max-w-xs mr-auto"> {message["content"]} </div>',
+                    unsafe_allow_html=True
+                )
+                
+            
+               
 
    if user_msg := st.chat_input("Type your message here..."):
        st.chat_message("user").markdown(user_msg)
@@ -27,7 +58,17 @@ def main():
            with st.spinner("Thinking..."):
                response_placeholder = st.empty()
                full_response = chatbot.process_user_input(user_msg)
-               response_placeholder.markdown(full_response)
+               st.markdown(
+                    f'<p class="p-2 bg-gray-100 rounded-lg">{full_response}</p>',
+                    unsafe_allow_html=True,
+                )
+    # Apply CSS styling
+   st.markdown(
+        """
+<script src="https://cdn.tailwindcss.com"></script>
+        """,
+        unsafe_allow_html=True,
+    )
 
 if __name__ == "__main__":
    main()

@@ -65,7 +65,7 @@ A: Of course! I'd be happy to help you get a quote. To provide you with an accur
 
 </example 5>
 
-
+w
 """
 
 ADDITIONAL_GUARDRAILS = """Please adhere to the following guardrails:
