@@ -14,7 +14,6 @@ def main():
     page_icon=":robot_face:",
     layout="wide",
     menu_items={
-        'Report a bug': "charlecoetzee@gmail.com",
         'About': "Customer Service Chatbot (demo, in development, ShipMyStuff is not liable for anything the bot says :). Ask me anything about shipping!"
     }
     )
