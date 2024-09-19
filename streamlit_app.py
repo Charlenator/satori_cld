@@ -9,14 +9,10 @@ def load_css():
         st.markdown(css, unsafe_allow_html=True)
 
 def main():
+    load_css()
     st.markdown(
         """
 <script src="https://cdn.tailwindcss.com"></script>
-<style>
-.chat-font {
-    font-family: 'Inter', sans-serif; 
-}
-</style>
     """,
         unsafe_allow_html=True,
     )
@@ -44,25 +40,29 @@ def main():
             with st.chat_message(message["role"]):
                 if message["role"] == "user":
                     st.markdown(
-                        f'<div class="chat-row"> {message["content"]} </div>',
+                        f'''
+                        {message["content"]}
+                        ''',
                         unsafe_allow_html=True,
                     )
                 else:
                  # Assistant message styling
                     st.markdown(
-                        f'<div class="class="chat-row"> {message["content"]} </div>',
+                        f'''
+                        {message["content"]}
+                         ''',
                         unsafe_allow_html=True
                     )
 
     if user_msg := st.chat_input("Type your message here..."):
-        st.chat_message("user").markdown(user_msg)
+        st.chat_message("user", avatar="https://raw.githubusercontent.com/Charlenator/satori_cld/master/static/user.png").markdown(user_msg)
 
-        with st.chat_message("assistant"):
+        with st.chat_message("assistant", avatar="https://raw.githubusercontent.com/Charlenator/satori_cld/master/static/bot.png"):
             with st.spinner("Thinking..."):
                 response_placeholder = st.empty()
                 full_response = chatbot.process_user_input(user_msg)
                 st.markdown(
-                    f'<p class="p-2 bg-gray-100 rounded-lg">{full_response}</p>',
+                    f'<p class="p-6 bg-gray-100 rounded-lg">{full_response}</p>',
                     unsafe_allow_html=True,
                 )
      # Apply CSS styling
