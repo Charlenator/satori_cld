@@ -27,17 +27,19 @@ def main():
             """
     st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 
-    st.markdown(
-        """
-<script src="https://cdn.tailwindcss.com"></script>
-    """,
-        unsafe_allow_html=True,
-    )
 
     st.markdown(
-        '<h2 class="text-2xl font-bold mb-2">Ask me almost anything about Shipping!</h1>',
-        unsafe_allow_html=True,
-    )
+    """
+    <h1 style="background-image: linear-gradient(to right, #00b7ad, #008000); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-color: #f0f0f0;">
+        How Can I Help?
+    </h1>
+    <h2 style="color: #666; font-size: 1.4rem; font-weight: 400; margin-top: 0.1rem;">
+        Your Shipping Questions Answered
+    </h2>
+    """,
+    unsafe_allow_html=True
+)
+    
     st.logo(
         image="https://shipmystuff-app.com/static/media/Logo_Optimised.02883188.png"
     )
@@ -76,7 +78,7 @@ def main():
                         unsafe_allow_html=True
                     )
 
-    if user_msg := st.chat_input("Type your message here..."):
+    if user_msg := st.chat_input("Type your question here..."):
         st.chat_message("user", avatar="https://raw.githubusercontent.com/Charlenator/satori_cld/master/static/user.png").markdown(user_msg)
 
         with st.chat_message("assistant", avatar="https://raw.githubusercontent.com/Charlenator/satori_cld/master/static/bot.png"):
@@ -87,13 +89,6 @@ def main():
                     f'<p class="p-6 bg-gray-100 rounded-lg">{full_response}</p>',
                     unsafe_allow_html=True,
                 )
-     # Apply CSS styling
-    st.markdown(
-        """
-<script src="https://cdn.tailwindcss.com"></script>
-        """,
-        unsafe_allow_html=True,
-    )
 
 
 if __name__ == "__main__":

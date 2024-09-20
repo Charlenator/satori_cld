@@ -1,3 +1,15 @@
-.stChatMessage{
-    font-family: "Source Sans Pro", sans-serif, "Segoe UI", "Roboto", sans-serif;
+
+section[tabindex="0"] {
+    overflow-x: hidden;
 }
+
+.stChatInputContainer > div {
+    height: 300px;
+    background-color: #e0f2f1;
+}
+
+.stChatMessage {
+    padding:20px;
+    border-radius:40px;
+}
+
