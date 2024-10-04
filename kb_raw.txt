@@ -1,0 +1,34 @@
+Title: International Courier Service Overview
+Category: Services
+Content: ShipMyStuff offers simplified international courier services without the need for courier accounts. Get multiple quotes instantly, compare options, and book your shipments online. Whether your items are big or small, we can handle them all. For large import or export needs, inquire about our specialized solutions. We also offer free consultations for process optimization, transport consulting, and supply chain consulting.
+URL: https://shipmystuff-app.com/
+
+Title: Competitive Pricing and Comparison
+Category: Pricing
+Content: At ShipMyStuff, we strive to find the best rates for our customers. We compare multiple courier quotes to ensure you get the most cost-effective option for your international shipments. Our online platform allows you to easily view and compare different pricing options, helping you make an informed decision based on your specific needs and budget.
+URL: https://shipmystuff-app.com/
+
+Title: Small Move Cube Packaging Solution
+Category: Services
+Content: Our small move cube is a cost-effective packaging solution for international shipping. It's suitable for small to large-sized boxes, travel suitcases, bags, TVs, golf bags, and general cargo. The inner dimensions of the small move cube are Height: 1.87m, Length: 1.00m, Width: 1.11m, with a volume of 2.01m3. Use our cubic size calculator on our website to determine if this option is right for your shipment.
+URL: https://shipmystuff-app.com/
+
+Title: Medium Move Cube Packaging Solution
+Category: Services
+Content: The medium move cube is ideal for shipping small to medium-sized cabinets, bicycles, gym equipment, golf clubs, large bags, and general cargo. Its inner dimensions are Height: 1.87m, Length: 1.11m, Width: 1.46m, with a volume of 3.01m3. This packaging solution offers a balance between capacity and cost-effectiveness. Check our website for the cubic size calculator to assess your needs.
+URL: https://shipmystuff-app.com/
+
+Title: Large Move Cube Packaging Solution
+Category: Services
+Content: Our large move cube is perfect for shipping chairs, foldable tables, queen-size beds, large appliances, couches (2-seater, 1-seater), and other sizable items. The inner dimensions are Height: 1.87m, Length: 1.46m, Width: 2.26m, with a volume of 6.17m3. This solution is ideal for larger shipments or small moves. Use our online cubic size calculator to determine if this option suits your needs.
+URL: https://shipmystuff-app.com/
+
+Title: Custom Crating and Special Transport Solutions
+Category: Services
+Content: ShipMyStuff offers custom crating solutions for delicate or valuable items such as sentimental pieces, antique furniture, and family heirlooms. We also provide special arrangements for the international transport of motorcycles and motor vehicles. These tailored solutions ensure that your precious or oversized items are securely packaged and transported with the utmost care.
+URL: https://shipmystuff-app.com/
+
+Title: Online Tools and Resources
+Category: Services
+Content: ShipMyStuff provides useful online tools to help you plan your shipment. Our cubic size calculator, available at https://shipmystuff-app.com, allows you to determine the best packaging solution for your items. Simply input your cargo dimensions to find the most suitable move cube or custom crating option. This tool helps you make informed decisions about your shipping needs.
+URL: https://shipmystuff-app.com/
