@@ -41,7 +41,7 @@ def main():
 )
     
     st.logo(
-        image="https://shipmystuff-app.com/static/media/Logo_Optimised.02883188.png"
+        image="https://logoipsum.com/artwork/286"
     )
 
     if "messages" not in st.session_state:
