@@ -10,11 +10,11 @@ def load_css():
 
 def main():
     st.set_page_config(
-    page_title="Ship My Stuff Customer Service (Demo)",
+    page_title="Move My Stuff Customer Service (Demo)",
     page_icon=":robot_face:",
     layout="wide",
     menu_items={
-        'About': "Customer Service Chatbot (demo, in development, ShipMyStuff is not liable for anything the bot says :). Ask me anything about shipping!"
+        'About': "Customer Service Chatbot Demo. Ask me anything about shipping!"
     }
     )
     load_css()
